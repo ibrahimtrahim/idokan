@@ -1,4 +1,5 @@
 import arrowRight from './arrow-right.png'
+import arrowUp from './arrow-up.png'
 import chevronLeft from './chevron-left.svg'
 import cheveronRight from './chevron-right.svg'
 import copyrightSign from './copyright-sign.svg'
@@ -13,6 +14,7 @@ import twitter from './twitter.svg'
 
 export {
     arrowRight,
+    arrowUp,
     cheveronRight,
     chevronLeft,
     copyrightSign,

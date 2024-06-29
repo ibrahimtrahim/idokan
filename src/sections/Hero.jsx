@@ -18,8 +18,8 @@ const Hero = () => {
           Your Comfort Journey.
         </p>
 
-        <h1 className='mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold'>
-          <span className='xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>
+        <h1 className='mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold dark:text-white'>
+          <span className='xl:whitespace-nowrap relative z-10 pr-10'>
             Traditional Style
           </span>
           <br />
@@ -34,7 +34,7 @@ const Hero = () => {
         <div className='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
           {statistics.map((stat, index) => (
             <div key={index}>
-              <p className='text-4xl font-palanquin font-bold'>{stat.value}</p>
+              <p className='text-4xl font-palanquin font-bold dark:text-white'>{stat.value}</p>
               <p className='leading-7 font-montserrat text-slate-gray'>
                 {stat.label}
               </p>
@@ -43,13 +43,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
+      <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40'>
         <img
           src={bigShoeImg}
           alt='shoe colletion'
           width={610}
           height={502}
-          className='object-contain relative z-10'
+          className='object-contain relative z-10 animate-up-down'
         />
 
         <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>

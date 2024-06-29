@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     fontSize: {
       xs: ['12px', '16px'],
@@ -17,6 +18,15 @@ export default {
       '8xl': ['96px', '106px']
     },
     extend: {
+      keyframes: {
+        'up-down': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+      },
+      animation: {
+        'up-down': 'up-down 3s ease-in-out infinite',
+      },
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
@@ -24,6 +34,7 @@ export default {
       colors: {
         'primary': "#ECEEFF",
         "coral-red": "#fce002",
+        "yellow-black": "#e1c804",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)"

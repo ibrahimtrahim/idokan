@@ -4,6 +4,8 @@ import ShoeCard from "./ShoeCard";
 import PopularProductCard from "./PopularProductCard";
 import ServiceCard from "./ServiceCard";
 import ReviewCard from "./ReviewCard";
+import ThemeToggle from "./ThemeToggle";
+import ScrollToTop from "./ScrollToTop";
 
 export {
     Button,
@@ -11,5 +13,7 @@ export {
     ShoeCard,
     PopularProductCard,
     ServiceCard,
-    ReviewCard
+    ReviewCard,
+    ThemeToggle,
+    ScrollToTop
 }

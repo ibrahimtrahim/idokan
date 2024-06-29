@@ -9,9 +9,10 @@ import {
   Footer
 } from './sections';
 import Nav from './components/Nav';
+import { ScrollToTop } from './components';
 
 const App = () =>  (
-    <main className="relative">
+    <main className="relative dark:bg-black">
       <Nav />
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
@@ -37,6 +38,7 @@ const App = () =>  (
       <section className="bg-black padding-x padding-t pb-8">
         <Footer />
       </section>
+      <ScrollToTop />
     </main>
   )
 
